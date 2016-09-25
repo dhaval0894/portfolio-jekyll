@@ -3,27 +3,12 @@ layout: null
 ---
 $(document).ready(function () {
   $('a.project-button').click(function (e) {
-    $('.project-list').removeClass('hide')
-    $('.experience-list').addClass('hide')
     panelCollapse()
   })
 
   $('a.experience-button').click(function (e) {
-    $('.experience-list').removeClass('hide')
-    $('.project-list').addClass('hide')
     panelCollapse()
   })
-
-  if (window.location.hash && window.location.hash == '#project') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-    $('.project-list').removeClass('hide')
-    $('.experience-list').addClass('hide')
-  }
-  else if (window.location.hash && window.location.hash == '#experience') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-    $('.experience-list').removeClass('hide')
-    $('.project-list').addClass('hide')
-  }
 
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
