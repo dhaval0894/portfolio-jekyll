@@ -1,0 +1,38 @@
+# Site settings
+title: Dhaval Purohit
+description: 'Full Stack Ruby On Rails Developer'
+url: 'https://dhaval0894.github.io/'
+baseurl: '/jekyll-uno/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Dhaval Purohit'
+  email: dhaval.purohit08@gmail.com
+  facebook_username: dhaval.purohit.92
+  github_username:  dhaval0894
+  linkedin_username:  dhaval-purohit-63226237
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
