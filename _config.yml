@@ -13,6 +13,11 @@ author:
   github_username:  dhaval0894
   linkedin_username:  dhaval-purohit-63226237
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title/
+
 defaults:
   -
     scope:
@@ -23,7 +28,10 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 10
+pagination:
+  limit: false
+  per_page: 20
+  title_suffix: " (page :num)"
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
@@ -34,5 +42,5 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+gems: ['octopress-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
