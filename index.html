@@ -2,7 +2,6 @@
 layout: default
 paginate:
   collection: projects
-permalink: /projects/
 ---
 
 <div class="project-list">
@@ -10,7 +9,7 @@ permalink: /projects/
   <ol class="post-list">
     {% for project in paginator.projects %}
       <li>
-        <h2 class="post-list__post-title post-title"><a href="#" title="{{ project.title }}">{{ project.title }}</a></h2>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ project.url | remove_first: '/' }}" title="{{ project.title }}">{{ project.title }}</a></h2>
         <hr class="post-list__divider">
       </li>
     {% endfor %}
