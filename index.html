@@ -1,24 +1,27 @@
 ---
 layout: default
-paginate:
-  collection: projects
 ---
 
 <div class="project-list">
-
   <ol class="post-list">
     {% for project in site.projects %}
       <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ project.url | remove_first: '/' }}" title="{{ project.title }}">{{ project.title }}</a></h2>
-        <hr class="post-list__divider">
+        <h2 class="post-list__post-title post-title"><a href="{{ project.link }}" title="{{ project.title }}" target="_blank">{{ project.title }}</a></h2>
+        <div class="post-list__meta"><strong>Role:</strong> {{project.role}}</span></div>
+        <div class="post-list__meta"><strong>Tech Stack:</strong> {{project.technology}}</span></div>
+        <p class="excerpt">{{ project.excerpt | remove: '<p>' | remove: '</p>' }}</p>
       </li>
+      {% if project.carousel %}
+        <div class="flexslider">
+          <ul class="slides">
+            {% for slides in project.carousel %}
+            <li>
+              <img src="{{ slides.image }}">
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     {% endfor %}
   </ol>
-
-  <hr class="post-list__divider ">
-
-  {% if paginator.previous_page or paginator.next_page %}
-      {% include pagination.html %}
-  {% endif %}
-
 </div>

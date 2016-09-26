@@ -1059,7 +1059,7 @@ pre {
 
 .excerpt {
 	margin: 0;
-	font-size: .9em;
+	font-size: 1.2em;
 	color: #999999; }
 
 .intro {
@@ -1438,12 +1438,11 @@ i {
 .post-list__post-title {
 	margin-top: 0;
 	margin-bottom: .2em;
-	font-size: 1.5em;
+	font-size: 2.2em;
 	line-height: 1.3em; }
-	.post-list__post-title a {
-		color: #333333; }
-		.post-list__post-title a:hover {
+	.post-list__post-title a:hover {
 			color: #b9301c; }
+
 
 .post-list__meta {
 	display: block;

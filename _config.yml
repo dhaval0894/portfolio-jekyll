@@ -28,10 +28,6 @@ defaults:
 
 # Build settings
 destination: _site
-pagination:
-  limit: false
-  per_page: 20
-  title_suffix: " (page :num)"
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
@@ -42,5 +38,4 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['octopress-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
