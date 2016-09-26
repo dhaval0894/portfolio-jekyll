@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Appock - Wordpress Blog To Mobile App"
 date:   2016-01-08 15:04:23
 ---
