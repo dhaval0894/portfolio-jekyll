@@ -28,6 +28,14 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    directionNav: false, 
+    slideshowSpeed: 5000,
+    animationSpeed: 600
+  })
+
 })
 
 function panelCollapse(){
