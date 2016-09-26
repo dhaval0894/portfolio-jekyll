@@ -7,7 +7,7 @@ paginate:
 <div class="project-list">
 
   <ol class="post-list">
-    {% for project in paginator.projects %}
+    {% for project in site.projects %}
       <li>
         <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ project.url | remove_first: '/' }}" title="{{ project.title }}">{{ project.title }}</a></h2>
         <hr class="post-list__divider">
