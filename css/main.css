@@ -54,3 +54,6 @@ pre.highlight code,
   border: 3px solid #fff;
   border-radius:100%;
 }
+.no-cursor {
+  cursor: text;
+}

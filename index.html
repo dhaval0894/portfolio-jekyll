@@ -4,7 +4,8 @@ layout: default
 
 <div class="project-list">
   <ol class="post-list">
-    {% for project in site.projects %}
+    {% assign sorted_pro = (site.projects | sort: 'order') %}
+    {% for project in sorted_pro %}
       <li>
         <h2 class="post-list__post-title post-title"><a href="{{ project.link }}" title="{{ project.title }}" target="_blank">{{ project.title }}</a></h2>
         <div class="post-list__meta"><strong>Role:</strong> {{project.role}}</span></div>

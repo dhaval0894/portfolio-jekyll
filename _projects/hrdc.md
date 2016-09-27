@@ -8,6 +8,7 @@ carousel:
   - image: /images/carousel/hrdc-1.png
   - image: /images/carousel/hrdc-2.png
   - image: /images/carousel/hrdc-3.png
+order: 3  
 ---
 A web based application so as to automate the manual system of Human Resource Development
 Center. The System provides online application forms for different courses conducted by the
