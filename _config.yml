@@ -1,8 +1,8 @@
 # Site settings
 title: Dhaval Purohit
 description: 'Rubyist | Full Stack Developer | Football Lover'
-url: 'https://dhaval0894.github.io/'
-baseurl: '/'
+url: https://dhavalpurohit.com
+baseurl: /
 google_analytics: 'UA-73294222-2'
 # disqus_shortname: 'your-disqus-name'
 
